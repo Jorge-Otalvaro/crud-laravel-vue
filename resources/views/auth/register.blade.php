@@ -70,7 +70,10 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div>            
+            <a class="btn btn-link" href="{{ route('login') }}">
+                ¿Ya tienes una cuenta? Ingresa
+            </a>            
         </div>
     </div>
 </div>

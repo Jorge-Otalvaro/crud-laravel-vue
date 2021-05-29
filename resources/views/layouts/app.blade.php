@@ -14,6 +14,8 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/dist/css/style.css') }}">
+    <link href="{{ asset('css/toastr.min.css') }}" rel="stylesheet"/> 
 </head>
 <body class="text-center">
     <div id="app">
@@ -37,11 +39,13 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>    
+    </div>        
+
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
       feather.replace()
     </script>
+    @include('sweetalert::alert')
 </body>
 </html>

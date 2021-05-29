@@ -38,6 +38,12 @@
                 </a>
             @endif
 
+            @if (Route::has('register'))
+                <a class="btn btn-link" href="{{ route('register') }}">
+                    ¿No tienes una cuenta? Regístrate
+                </a>
+            @endif
+
             <p class="mt-5 mb-3 text-muted">&copy; {{ date('Y') }}</p>
         </form>
     </div>
